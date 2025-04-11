@@ -1,0 +1,85 @@
+#create a list 
+list = [1,2,3,4,5,6,7,8,9,10]
+print("orginal list:",list)
+
+#add an element to the end of the list
+list.append(11)
+print("after append:",list)
+
+#insert an element beginning of the list
+list.insert(0,0)
+print("after insert:",list)
+
+#remove specific element from the list
+list.remove(5)
+print("after remove:",list)
+
+#remove the element at specific index
+del list[3]
+print("after delete:",list)
+
+#pop the last element
+popped_element=list.pop()
+print("after pop:",list)
+print("popped element:",popped_element)
+
+#sort the list in asending order
+list.sort()
+print("after sort:",list)
+
+#reversing the list
+list.reverse()
+print("after reverse:",list)
+
+#find maximum value
+maximum_value=max(list)
+print("maximum value:",maximum_value)
+
+#create anew list by multiply orginal list by 2
+list=[2*10,2*9,2*8,2*7,2*6,2*4,2*2,2*1,2*0]
+print("after 2 *:",list)
+print("newlist:",list)
+
+DICTIONARY
+# Creating a dictionary
+dictionary={'a':10,'b':20,'c':30,'d':40,'e':50}
+print("orginal _dict:",dictionary)
+
+#add a new key-value pair
+dictionary['f'] = 60
+print("after adding key-value pair:",dictionary)
+
+#update the value of an exisiting key
+dictionary['d'] = 90
+print("after updating value:",dictionary)
+
+#remove a key-value pair
+del dictionary['d']
+print("after deleting key-value pair:",dictionary)
+
+#check if a and e in dictionary
+print('a' in dictionary)
+print('e'in dictionary)
+
+#iterate over key values for each key, value
+for key,value in dictionary.items():
+  print(key,value)
+
+#create a new dictionary by squring each value
+dictionary={'a':10,'b':20,'c':30,'e':50,"f":60}
+new_dictionary={key:value**2 for key,value in dictionary.items()}
+print("new dictionary;",new_dictionary)
+
+#find maximum value
+
+dictionary={'a':10,'b':20,'c':30,'e':50,'f':60}
+maximum_value=max(dictionary.values())
+print("maximum value:",dictionary)
+
+#merge two dictionaries
+dictionary_1={'g':100,'h':110,'i':120,'j':130}
+dictionary_2={'k':140,"l":150,'m':160}
+merged_dictionary={**dictionary_1,**dictionary_2}
+print("merged dictionary;",merged_dictionary)
+
+
